@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #cccccc;
+    width: 800px;
+    height: 600px;
+    border-radius: 15px;
+}
+
+.addNote {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: green;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.note {
+    height: 50px;
+    margin-top: 15px;
+    padding-left: 15px;
+    border-radius: 10px;
+    background-color: #eee;
+    line-height: 50px;
+    font-size: 30px;
+    position: relative;
+}
+
+.delNote, .toNote {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    color: white;
+    font-family: Arial, serif;
+    top: 5px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.delNote {
+    background-color: red;
+    right: 50px;
+}
+
+.toNote {
+    background-color: green;
+    right: 5px;
+}
+
+.addNoteField, .delDialog, .desc {
+    position: absolute;
+    width: 200px;
+    left: calc(50% - 100px);
+    top: calc(50% - 75px);
+    background-color: #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+    text-align: center;
+    z-index: 100;
+}
+
+.noteName {
+    width: 200px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.noteText {
+    width: 200px;
+    height: 85px;
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.add, .cancel, .delY, .delN, .close {
+    display: inline-block;
+    background-color: #bbb;
+    width: 95px;
+    text-align: center;
+    user-select: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
