@@ -72,21 +72,22 @@
     z-index: 100;
 }
 
-.noteName {
+.noteName, .noteText {
     width: 200px;
-    margin-bottom: 10px;
     outline: none;
     border: none;
     border-radius: 5px;
+    background-color: white;
+}
+
+.noteName {
+    margin-bottom: 10px;
 }
 
 .noteText {
-    width: 200px;
     height: 85px;
     resize: none;
-    outline: none;
-    border: none;
-    border-radius: 5px;
+    text-align: left;
 }
 
 .add, .cancel, .delY, .delN, .close {

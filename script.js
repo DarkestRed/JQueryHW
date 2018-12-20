@@ -21,8 +21,8 @@ $(document).ready(() => {
             "<div class='toNote'>></div>";
         let desc = document.createElement("div");
         desc.className = "desc";
-        desc.innerHTML = "<div>" + $noteName.val() + "</div>" +
-            "<div>" + $noteText.val() + "</div>" +
+        desc.innerHTML = "<div class='noteName'>" + $noteName.val() + "</div>" +
+            "<div class='noteText'>" + $noteText.val() + "</div>" +
             "<div class='close'>Закрыть</div>";
         $notes.append(note, desc);
         $noteName.val("");
